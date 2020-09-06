@@ -1,78 +1,42 @@
+:root{
+    --primary: #798C35;
+    --neutral: #485922;
+    --text: #242614;
+    --back: #F2F2F2;
+}
+
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background-color: var(--back);
 }
-/* contiene toda la pagina */
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+header{
+    color: var(--back);
+    background-color: var(--text);
 }
-/* la parte superior de la pagina */
-.menu{
-    background-color: #0D0D0D;
-    width: 100%;
-    flex-grow: 0.4;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+.hero{
+    background-color: var(--neutral);
+    color: var(--back);
+}
+.logo{
+    color: var(--back);
+    text-decoration:none;
     font-family: 'Uncial Antiqua', cursive; 
     font-size: 2em; 
 }
-/* parte central de la pagina */
-.main{
-    display: flex;
-    flex-grow: 4;
-    overflow: hidden;
-}
-.left{
-    background-color: #593F2F;
-    width: 75%;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-.caja{
-    background-color: #F2F2F2;
-    width: 90%;
-    margin: 2% 4%;
-    padding: 1%;
-    box-shadow: 0 0 10px #BFBFBF;
-}
-.caja > p{
-    margin: 0;
-}
-
-.right{
-    background-color: #0D0D0D;
-    width: 25%;
-    z-index: 1;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
-.imgPerfil{
-    width: 80%;
-    height: auto;
-    padding: 5% 10%;
-    flex-grow: 0;
-}
-.right p{
-    padding: 0 10px;
-    margin-top: 0;
-    text-align: center;
-    flex-grow: 1;
-}
-
-.footer{
-    background-color: #8C8C8C;
-    width: 100%;
-    flex-grow: 0.1;
-    align-self: flex-end;
-    display: flex;
+.menu{
+    padding: 10px 0px;
     align-items: center;
-    justify-content: center;
-    color: #0D0D0D;
+}
+.control{
+    padding: 0 5px;;
+}
+.control p, .control h1{
+
+}
+.image{
+    width: 256px;
+}
+.image img{
+    box-shadow: 0px 5px 10px rgba(0,0,0,1)
 }

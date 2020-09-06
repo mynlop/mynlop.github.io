@@ -1,93 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <title>Mynor Lopez</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
-    <script src="js/jquery-3.4.0.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <title>mynLop</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="menu"><strong>mynLop</strong></div>
-        <div class="main">
-            <div class="left">
-                <div class="caja">
-                    <p>Sobre mi</p>
-                    <hr>
-                    <p>Tengo 25 años, estudiante en la Universidad Galileo, vivo en Mixco, Guatemala.</p>
+        <header>
+            <nav class="container">
+                <div class="row around-xs between-sm menu">
+                    <div class="col-xs-6 col-sm-4 start-xs">
+                        <a class="logo" href="index.html">
+                            mynLop
+                        </a>
+                    </div>
+                    
+                    <div class="col-xs-6 middle-xs">
+                        <div class="row around-xs end-sm ">
+                            <div class="control">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="control">
+                                <i class="fab fa-linkedin-in" ></i>
+                            </div>
+                            <div class="control">
+                                <i class="fab fa-github" ></i>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="caja">
-                        <p>Estudios</p>
-                        <hr>
-                        <p>Actualmente estudiando el Tecnico en Desarrollo de Software, proximamente continuare estudiando Ingenieria.</p>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="row start-xs ">
+                        <div class="control">
+                            <figure class="image">
+                                <img src="image/yo.jpg" width="100%">
+                            </figure>
+                        </div>    
+                        <div class="control start-xs">
+                            <p class="">
+                                Hola soy
+                            </p>
+                            <h1 class="title">
+                                Mynor Lopez
+                            </h1>
+                            <p class="">
+                                Desarrollador web en progreso
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="caja">
-                    <p>Conocimientos de programacion</p>
-                    <hr>
-                    <p>Lenguajes nivel de conocimiento basicos:</p>
-                    <ul>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>.Net</li>
-                    </ul>
-                    <p>Lenguajes nivel conocimiento intermedio:</p>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                    </ul>
-                    <p>Librerias entre otros conocimientos nivel intermedio:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JQuery</li>
-                        <li>Bootstrap</li>
-                        <li>Materialize</li>
-                        <li>SQL Server y MySQL</li>
-                    </ul>
-<!--                     <p>Estudiando actualmente</p>
-                    <ul>
-                        <li>React</li>
-                        <li>NodeJS</li>
-                        <li>Laravel</li>
-                        <li>Python</li>
-                    </ul> -->
-                </div>
-                <div class="caja">
-                    <p>Portafolio</p>
-                    <hr>
-                    <ul>
-                        <li><a href="https://mynlop.github.io/materialize/" target="_blank">Guatemala</a> - HTML, CSS, MaterializeCss</li>
-                        <li><a href="https://mynlop.github.io/AdminTheme/" target="_blank">Admin </a> - Bootstrap, HTML, CSS</li>
-                        <li><a href="https://mynlop.github.io/bootstrap-artistas/" target="_blank">Artistas </a> - Bootstrap, HTML, CSS</li>
-                        <li><a href="https://mynlop.github.io/travel/index.html" target="_blank">Travel </a> - HTML, CSS</li>
-                        <li><a href="http://c-18002117.herokuapp.com/" target="_blank">Works </a> - Laravel, PHP, HTML, CSS</li>
-                        <li><a href="https://mynlop.000webhostapp.com/UsuariosPHP/" target="_blank">UsuariospHP </a> - PHP, Bootstrap, Sesiones, Foundation</li>
-                        <li><a href="https://mynlop.000webhostapp.com/SistemaCRUD/Empleados/" target="_blank">Empleados </a> - PHP, Bootstrap, CSS, HTML</li>
+            </section> 
 
-                    </ul>
+            <section class="skills">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                          First column
+                        </div>
+                        <div class="column">
+                          Second column
+                        </div>
+                        <div class="column">
+                          Third column
+                        </div>
+                      </div>
                 </div>
-                <div class="caja">
-                    <p>Redes Sociales</p>
-                    <hr>
-                    <ul>
-                        <li><a href="https://twitter.com/mynor_lop">Twitter</a>  </li>
-                        <li><a href="https://github.com/mynlop">Github</a></li>
-                        <li>mynlop15@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="caja">
-                    <p>Sobre este sitio</p>
-                    <hr>
-                    <p>Esta es la version 0.1 de mi pagina, proximamente habran nuevas versiones de mi sitio, por lo mismo este sitio no cuenta con responsive.</p>
-                </div>
-            </div>  
-            <div class="right">
-                <img class="imgPerfil" src="image/yo.jpg" alt="foto perfil">
-                <p>Hola que tal me llamo Mynor Lopez, me gusta el desarrollo web. Entre mis hobbies esta ver anime, aprender algo nuevo, y realizar tecnicas(futbol).</p>
-                <p>"La practica hace al maestro"</p>
-                <div class="footer">Mynor Lopez © 2019 v 0.1</div>
-            </div>
-        </div>
-    </div>
+            </section>
+        </main>
+    
 </body>
 </html>
